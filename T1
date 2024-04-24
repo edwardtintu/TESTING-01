@@ -1,0 +1,167 @@
+{
+  "id": "6f861d03-a32f-4fa9-acb8-891bf4af1d0c",
+  "version": "2.0",
+  "name": "T1",
+  "url": "https://www.cmch-vellore.edu",
+  "tests": [{
+    "id": "e930ecf4-44ce-43b8-9b40-715c12b38096",
+    "name": "T1",
+    "commands": [{
+      "id": "c12bbe4c-ef9f-47dd-bfcb-7f773f4071a9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81103abb-6f1c-4830-9ca8-7b259a614e2c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d94f58d-2066-48c3-83e6-8e1f4dafedee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu2",
+      "targets": [
+        ["css=.menu2", "css:finder"],
+        ["xpath=//form[@id='form1']/div[3]/div[4]/div/div/a[6]/div", "xpath:idRelative"],
+        ["xpath=//a[6]/div", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9836",
+      "windowTimeout": 2000
+    }, {
+      "id": "afbaedb1-b913-4f83-9608-380d47b0b78f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9836}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e15e806b-e68b-4c0c-9c22-4cdaec6eff54",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > a",
+      "targets": [
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'with User ID')]", "xpath:link"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div/div/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf957203-6ecb-40d7-84fc-3cff4dc6af01",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtwebtrans",
+      "targets": [
+        ["id=txtwebtrans", "id"],
+        ["name=ctl00$Main$txtwebtrans", "name"],
+        ["css=#txtwebtrans", "css:finder"],
+        ["xpath=//input[@id='txtwebtrans']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div/div/div/div/div/div/div/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76dab3e6-453e-4183-b3d4-b07a052e553d",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtwebrandomno",
+      "targets": [
+        ["id=txtwebrandomno", "id"],
+        ["name=ctl00$Main$txtwebrandomno", "name"],
+        ["css=#txtwebrandomno", "css:finder"],
+        ["xpath=//input[@id='txtwebrandomno']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f5fe47b-1835-49c9-895c-81fb612b3d61",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtwebtrans",
+      "targets": [
+        ["id=txtwebtrans", "id"],
+        ["name=ctl00$Main$txtwebtrans", "name"],
+        ["css=#txtwebtrans", "css:finder"],
+        ["xpath=//input[@id='txtwebtrans']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div/div/div/div/div/div/div/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d293ff6-ded9-4708-af4e-0bfabb5b3f4c",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtwebtrans",
+      "targets": [
+        ["id=txtwebtrans", "id"],
+        ["name=ctl00$Main$txtwebtrans", "name"],
+        ["css=#txtwebtrans", "css:finder"],
+        ["xpath=//input[@id='txtwebtrans']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div/div/div/div/div/div/div/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "33e66768-7620-4bdc-b5ee-1b735aa88bd5",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtwebrandomno",
+      "targets": [
+        ["id=txtwebrandomno", "id"],
+        ["name=ctl00$Main$txtwebrandomno", "name"],
+        ["css=#txtwebrandomno", "css:finder"],
+        ["xpath=//input[@id='txtwebrandomno']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9333f95-ae17-4264-906d-fde4e66c9446",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtwebrandomno",
+      "targets": [
+        ["id=txtwebrandomno", "id"],
+        ["name=ctl00$Main$txtwebrandomno", "name"],
+        ["css=#txtwebrandomno", "css:finder"],
+        ["xpath=//input[@id='txtwebrandomno']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "67890"
+    }, {
+      "id": "27c9bf5d-c177-434e-b118-2b97b1574656",
+      "comment": "LOGIN BUTTON",
+      "command": "check",
+      "target": "css=#btnLoginNew123",
+      "targets": [
+        ["id=btnLoginNew", "id"],
+        ["name=ctl00$Main$btnLoginNew", "name"],
+        ["css=#btnLoginNew", "css:finder"],
+        ["xpath=//input[@id='btnLoginNew']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div/div/div/div/div/div/div/div/div[2]/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cdf45c38-d52f-4d1a-a189-7b9ab588f131",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e930ecf4-44ce-43b8-9b40-715c12b38096"]
+  }],
+  "urls": ["https://www.cmch-vellore.edu/"],
+  "plugins": []
+}

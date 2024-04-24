@@ -1,0 +1,133 @@
+{
+  "id": "4c19fa87-f2ce-48ca-8306-56a3f2ab2836",
+  "version": "2.0",
+  "name": "TESTING T1",
+  "url": "https://clin.cmcvellore.ac.in",
+  "tests": [{
+    "id": "27401cf3-ae1a-46d9-ac43-5daab2975524",
+    "name": "Untitled",
+    "commands": [{
+      "id": "dc7b288f-ace7-4168-967d-bb51bbe08f9f",
+      "comment": "",
+      "command": "open",
+      "target": "/webapt/CMC/Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32ed3bc8-1e3f-4e29-8041-ceb6ec3c5633",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66fa9e29-9b11-4bd6-bc73-bc9655ec05ee",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtHNum",
+      "targets": [
+        ["id=txtHNum", "id"],
+        ["name=ctl00$Main$txtHNum", "name"],
+        ["css=#txtHNum", "css:finder"],
+        ["xpath=//input[@id='txtHNum']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be84312a-f7ad-4d7b-a66f-d0d1a6328c62",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtYrBirth",
+      "targets": [
+        ["id=txtYrBirth", "id"],
+        ["name=ctl00$Main$txtYrBirth", "name"],
+        ["css=#txtYrBirth", "css:finder"],
+        ["xpath=//input[@id='txtYrBirth']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55160c8a-136b-4cea-8265-eb87de109576",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnLogin",
+      "targets": [
+        ["id=btnLogin", "id"],
+        ["name=ctl00$Main$btnLogin", "name"],
+        ["css=#btnLogin", "css:finder"],
+        ["xpath=//input[@id='btnLogin']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2a80ede-f773-4e6a-9029-d555a66aa33c",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtHNum",
+      "targets": [
+        ["id=txtHNum", "id"],
+        ["name=ctl00$Main$txtHNum", "name"],
+        ["css=#txtHNum", "css:finder"],
+        ["xpath=//input[@id='txtHNum']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eebe8d0e-b712-42c9-befc-28578f7956e4",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtHNum",
+      "targets": [
+        ["id=txtHNum", "id"],
+        ["name=ctl00$Main$txtHNum", "name"],
+        ["css=#txtHNum", "css:finder"],
+        ["xpath=//input[@id='txtHNum']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "11b1a912-ef8f-4fa8-a2e4-046360e020c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtYrBirth",
+      "targets": [
+        ["id=txtYrBirth", "id"],
+        ["name=ctl00$Main$txtYrBirth", "name"],
+        ["css=#txtYrBirth", "css:finder"],
+        ["xpath=//input[@id='txtYrBirth']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0251fdd-be9c-4c90-be2a-c4875eff79d9",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtYrBirth",
+      "targets": [
+        ["id=txtYrBirth", "id"],
+        ["name=ctl00$Main$txtYrBirth", "name"],
+        ["css=#txtYrBirth", "css:finder"],
+        ["xpath=//input[@id='txtYrBirth']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "4567"
+    }]
+  }],
+  "suites": [{
+    "id": "a7ae5cf7-2545-411e-9fb2-48c40e0ddad5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["27401cf3-ae1a-46d9-ac43-5daab2975524"]
+  }],
+  "urls": ["https://clin.cmcvellore.ac.in/"],
+  "plugins": []
+}
