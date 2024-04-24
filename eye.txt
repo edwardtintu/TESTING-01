@@ -1,0 +1,79 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CMCEyePortalRandomTest {
+
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\EDWARD\\Downloads\\CHROME DRIVER\\chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+
+        driver.get("https://clin.cmcvellore.ac.in/webapt/CMC/Login");
+
+        int attempts = 5; // Number of login attempts
+        int passed = 0; // Counter for passed attempts
+        int failed = 0; // Counter for failed attempts
+        String[][] credentials = new String[attempts][2]; // Array to store usernames and passwords
+
+        // Generate random usernames and passwords
+        for (int i = 0; i < attempts; i++) {
+            credentials[i][0] = getRandomString(8); // Generate random username
+            credentials[i][1] = getRandomString(8); // Generate random password
+        }
+
+        // Perform login attempts with random credentials
+        for (int i = 0; i < attempts; i++) {
+            String username = credentials[i][0];
+            String password = credentials[i][1];
+
+            try {
+                WebElement usernameField = driver.findElement(By.name("ctl00$Main$txtHNum")); // Adjust locator for username field
+                usernameField.clear();
+                usernameField.sendKeys(username);
+
+                WebElement passwordField = driver.findElement(By.name("ctl00$Main$txtYrBirth")); // Adjust locator for password field
+                passwordField.clear();
+                passwordField.sendKeys(password);
+
+                WebElement loginButton = driver.findElement(By.name("ctl00$Main$btnLogin")); // Adjust locator for login button
+                loginButton.click();
+
+                String currentUrl = driver.getCurrentUrl();
+                if (currentUrl.equals("https://clin.cmcvellore.ac.in/webapt/CMC/")) { // Adjust URL for successful login
+                    System.out.println("Login successful for username: " + username);
+                    passed++;
+                } else {
+                    System.out.println("Login failed for username: " + username);
+                    failed++;
+                }
+            } catch (Exception e) {
+                System.out.println("Exception occurred for username: " + username + " - " + e.getMessage());
+                failed++;
+            } finally {
+                try {
+                    // Add a sleep statement to introduce a time delay after each attempt
+                    Thread.sleep(2000); // 2 seconds delay between attempts (adjust as needed)
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        System.out.println("\nTotal test cases: " + attempts);
+        System.out.println("Passed: " + passed);
+        System.out.println("Failed: " + failed);
+
+        driver.quit();
+    }
+
+    // Method to generate random string
+    public static String getRandomString(int length) {
+        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < length; i++) {
+            stringBuilder.append(characters.charAt((int) (Math.random() * characters.length())));
+        }
+        return stringBuilder.toString();
+    }
+}

@@ -1,0 +1,45 @@
+import org.junit.Test;
+import org.junit.Before;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.Dimension;
+import org.junit.After;
+
+public class LoginButtonColorTest {
+    private WebDriver driver;
+
+    @Before
+    public void setUp() {
+        // Set path to the ChromeDriver executable
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\EDWARD\\Downloads\\CHROME DRIVER\\chromedriver.exe");
+        driver = new ChromeDriver();
+    }
+
+    @Test
+    public void testLoginButtonColor() {
+        // Navigate to the login page
+        driver.get("https://clin.cmcvellore.ac.in/webapt/CMC/Login");
+
+        // Ensure the login button is visible
+        driver.manage().window().setSize(new Dimension(974, 1032));
+
+        // Find the login button element
+        WebElement loginButton = driver.findElement(By.id("btnLoginNew"));
+
+        // Get the classes applied to the login button
+        String buttonClasses = loginButton.getAttribute("w3-button w3-white w3-border");
+
+        // Expected classes for the original color
+        String expectedClasses = "w3-button w3-white w3-border";
+
+        // Check if the classes match the expected classes
+        if (!buttonClasses.equals(expectedClasses)) {
+            System.out.println("Error: Login button color does not match the original color.");
+        } else {
+            System.out.println("Success: Login button color matches the original color.");
+        }
+    }
+
+}
